@@ -3,7 +3,7 @@ import sys
 __author__ = 'hsenid'
 
 file = open("output.csv", "r")
-file2 = open("processed.csv", "w+")
+file2 = open("processed.csv", "w")
 
 for i in range(1, len(file.readlines()) + 1):
     line = linecache.getline("output.csv", i).split(',')
